@@ -23,7 +23,7 @@ let sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
         throw new Error('Missing environment variables')
     }
 
-    //Create a new instance of a revolut account
+    //Create a new instance of a revolut account 
     let revolut = new Revolut(process.env.NUMBER, process.env.PASSCODE)
 
     //Signin with the credentials given in the constructor
